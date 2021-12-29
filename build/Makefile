@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\CLRS data structure and problem set"
+CMAKE_SOURCE_DIR = C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\CLRS data structure and problem set\build"
+CMAKE_BINARY_DIR = C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CLRS data structure and problem set\build\CMakeFiles" "E:\CLRS data structure and problem set\build\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\CMakeFiles C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CLRS data structure and problem set\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,35 +128,29 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-# target to build an object file
-heap.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/heap.obj
-.PHONY : heap.obj
-
-# target to preprocess a source file
-heap.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/heap.i
-.PHONY : heap.i
-
-# target to generate assembly for a file
-heap.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/heap.s
-.PHONY : heap.s
-
-# target to build an object file
-main.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.obj
+main.obj: main.cpp.obj
 .PHONY : main.obj
 
-# target to preprocess a source file
-main.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.i
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
 .PHONY : main.i
 
-# target to generate assembly for a file
-main.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.s
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
 .PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -167,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
-	@echo ... heap.obj
-	@echo ... heap.i
-	@echo ... heap.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,6 +1,6 @@
 #include <vector>
 #include <iostream>
-#include "heap.cpp"
+#include "heap.h"
 
 
 
