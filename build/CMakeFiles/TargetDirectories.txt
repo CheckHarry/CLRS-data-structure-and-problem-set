@@ -1,3 +1,0 @@
-C:/Users/user/Documents/GitHub/CLRS-data-structure-and-problem-set/build/CMakeFiles/main.dir
-C:/Users/user/Documents/GitHub/CLRS-data-structure-and-problem-set/build/CMakeFiles/edit_cache.dir
-C:/Users/user/Documents/GitHub/CLRS-data-structure-and-problem-set/build/CMakeFiles/rebuild_cache.dir
