@@ -20,6 +20,7 @@ public:
     void build_heap();
     const T& get_max();
     T extract_max();
+    std::vector<T> get_sorted_vec();
 };
 
 
@@ -70,4 +71,14 @@ T heap<T>::extract_max(){
         heapify(0);
         return temp;
     }
+
+template<typename T>
+std::vector<T> heap<T>::get_sorted_vec(){
+    while(vec_size > 0){
+        std::swap(heap_vec[0] , heap_vec[vec_size - 1]);
+        vec_size --;
+        heapify(0);
+    }    
+    return heap_vec;
+}
 #endif
