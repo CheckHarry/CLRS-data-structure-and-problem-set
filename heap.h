@@ -34,9 +34,9 @@ void heap<T>::print_heap(){
 template<typename T>
 void heap<T>::heapify(int index){
     int l = index * 2 , r = index * 2 + 1 , max_index = index;
-    if (l < vec_size and heap_vec[l] > heap_vec[index]) max_index = l;
-    else max_index = index;
-    if (r < vec_size and heap_vec[max_index] < heap_vec[r]) max_index = r;
+    if (l < vec_size && heap_vec[l] > heap_vec[index])  max_index = l; 
+    else  max_index = index; 
+    if (r < vec_size && heap_vec[max_index] < heap_vec[r]) max_index = r;
 
     if (max_index != index){
         std::swap(heap_vec[max_index] , heap_vec[index]);
