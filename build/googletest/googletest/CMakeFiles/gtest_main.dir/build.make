@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set
+CMAKE_SOURCE_DIR = "E:\CLRS data structure and problem set"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build
+CMAKE_BINARY_DIR = "E:\CLRS data structure and problem set\build"
 
 # Include any dependencies generated for this target.
 include googletest/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -72,16 +72,16 @@ googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googletes
 googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googletest/googletest/CMakeFiles/gtest_main.dir/includes_CXX.rsp
 googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: ../googletest/googletest/src/gtest_main.cc
 googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googletest/googletest/CMakeFiles/gtest_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\googletest\googletest\src\gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\CLRS data structure and problem set\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+	cd /d E:\CLRSDA~1\build\GOOGLE~1\GOOGLE~2 && E:\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c "E:\CLRS data structure and problem set\googletest\googletest\src\gtest_main.cc"
 
 googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\googletest\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d E:\CLRSDA~1\build\GOOGLE~1\GOOGLE~2 && E:\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\CLRS data structure and problem set\googletest\googletest\src\gtest_main.cc" > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest && C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\googletest\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d E:\CLRSDA~1\build\GOOGLE~1\GOOGLE~2 && E:\msys2\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\CLRS data structure and problem set\googletest\googletest\src\gtest_main.cc" -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -93,19 +93,19 @@ gtest_main_EXTERNAL_OBJECTS =
 lib/libgtest_main.a: googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
 lib/libgtest_main.a: googletest/googletest/CMakeFiles/gtest_main.dir/build.make
 lib/libgtest_main.a: googletest/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\lib\libgtest_main.a"
-	cd /d C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
-	cd /d C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\CLRS data structure and problem set\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\lib\libgtest_main.a"
+	cd /d E:\CLRSDA~1\build\GOOGLE~1\GOOGLE~2 && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
+	cd /d E:\CLRSDA~1\build\GOOGLE~1\GOOGLE~2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 googletest/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_main.a
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/build
 
 googletest/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /d C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
+	cd /d E:\CLRSDA~1\build\GOOGLE~1\GOOGLE~2 && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 googletest/googletest/CMakeFiles/gtest_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\googletest\googletest C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\googletest\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\CLRS data structure and problem set" "E:\CLRS data structure and problem set\googletest\googletest" "E:\CLRS data structure and problem set\build" "E:\CLRS data structure and problem set\build\googletest\googletest" "E:\CLRS data structure and problem set\build\googletest\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/depend
 

@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set
+CMAKE_SOURCE_DIR = "E:\CLRS data structure and problem set"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build
+CMAKE_BINARY_DIR = "E:\CLRS data structure and problem set\build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,9 +141,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\CMakeFiles C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CLRS data structure and problem set\build\CMakeFiles" "E:\CLRS data structure and problem set\build\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\user\Documents\GitHub\CLRS-data-structure-and-problem-set\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\CLRS data structure and problem set\build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -195,6 +195,19 @@ heap_test: cmake_check_build_system
 heap_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\heap_test.dir\build.make CMakeFiles/heap_test.dir/build
 .PHONY : heap_test/fast
+
+#=============================================================================
+# Target rules for targets named red_black_tree_test
+
+# Build rule for target.
+red_black_tree_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 red_black_tree_test
+.PHONY : red_black_tree_test
+
+# fast build rule for target.
+red_black_tree_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_black_tree_test.dir\build.make CMakeFiles/red_black_tree_test.dir/build
+.PHONY : red_black_tree_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -296,6 +309,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+red_black_tree_test.obj: red_black_tree_test.cpp.obj
+.PHONY : red_black_tree_test.obj
+
+# target to build an object file
+red_black_tree_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_black_tree_test.dir\build.make CMakeFiles/red_black_tree_test.dir/red_black_tree_test.cpp.obj
+.PHONY : red_black_tree_test.cpp.obj
+
+red_black_tree_test.i: red_black_tree_test.cpp.i
+.PHONY : red_black_tree_test.i
+
+# target to preprocess a source file
+red_black_tree_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_black_tree_test.dir\build.make CMakeFiles/red_black_tree_test.dir/red_black_tree_test.cpp.i
+.PHONY : red_black_tree_test.cpp.i
+
+red_black_tree_test.s: red_black_tree_test.cpp.s
+.PHONY : red_black_tree_test.s
+
+# target to generate assembly for a file
+red_black_tree_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\red_black_tree_test.dir\build.make CMakeFiles/red_black_tree_test.dir/red_black_tree_test.cpp.s
+.PHONY : red_black_tree_test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -315,12 +352,16 @@ help:
 	@echo ... gtest_main
 	@echo ... heap_test
 	@echo ... main
+	@echo ... red_black_tree_test
 	@echo ... heap_test.obj
 	@echo ... heap_test.i
 	@echo ... heap_test.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... red_black_tree_test.obj
+	@echo ... red_black_tree_test.i
+	@echo ... red_black_tree_test.s
 .PHONY : help
 
 

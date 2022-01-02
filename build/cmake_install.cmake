@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/user/Documents/GitHub/CLRS-data-structure-and-problem-set
+# Install script for directory: E:/CLRS data structure and problem set
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/msys64/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "E:/msys2/mingw64/bin/objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/user/Documents/GitHub/CLRS-data-structure-and-problem-set/build/googletest/cmake_install.cmake")
+  include("E:/CLRS data structure and problem set/build/googletest/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/user/Documents/GitHub/CLRS-data-structure-and-problem-set/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/CLRS data structure and problem set/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
