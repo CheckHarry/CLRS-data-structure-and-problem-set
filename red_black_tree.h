@@ -1,7 +1,9 @@
 
-#ifndef INCLUDE_H
+#ifndef INCLUDE_RED_BLACK_TREE
 
-#define INCLUDE_H
+#define INCLUDE_RED_BLACK_TREE
+
+
 template <typename T>
 struct Node{
     T val;
@@ -20,6 +22,7 @@ class red_black_tree{
     Node<T>* root;
 public:
     red_black_tree(T initial_value);//
+    ~red_black_tree(); // manage life cycle of node
     void insert(T val);
     void rotate_left(Node<T> *node);
     void rotate_right(Node<T> *node);
@@ -33,6 +36,11 @@ template<typename T>
 red_black_tree<T>::red_black_tree(T initial_value){
     root = new Node<T>(initial_value);
     root -> color = 0;
+}
+
+template<typename T>
+red_black_tree<T>::~red_black_tree(){
+    // TODO : delete all heap memory located by the object
 }
 
 template<typename T>
@@ -80,4 +88,5 @@ Node<T>* red_black_tree<T>::get_root(){
     return root;
 }
 #endif
+
 #endif
