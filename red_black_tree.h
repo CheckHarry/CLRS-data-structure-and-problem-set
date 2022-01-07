@@ -68,7 +68,7 @@ void red_black_tree<T>::rotate_right(Node<T> *node){
 template<typename T>
 void red_black_tree<T>::insert(T value){
     Node<T>* new_node = new Node<T>(value);
-    new_node -> color = 0;
+    new_node -> color = 1;
 }
 
 template<typename T>
