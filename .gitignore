@@ -1,0 +1,6 @@
+#CMake
+build/
+CMakeFiles
+
+#VSCODE
+.vscode/

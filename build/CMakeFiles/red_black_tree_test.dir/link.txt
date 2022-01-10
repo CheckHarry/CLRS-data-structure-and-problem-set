@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\red_black_tree_test.dir/objects.a
-E:\msys2\mingw64\bin\ar.exe qc CMakeFiles\red_black_tree_test.dir/objects.a @CMakeFiles\red_black_tree_test.dir\objects1.rsp
-E:\msys2\mingw64\bin\g++.exe -std=c++2a -Wl,--whole-archive CMakeFiles\red_black_tree_test.dir/objects.a -Wl,--no-whole-archive -o red_black_tree_test.exe -Wl,--out-implib,libred_black_tree_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\red_black_tree_test.dir\linklibs.rsp
