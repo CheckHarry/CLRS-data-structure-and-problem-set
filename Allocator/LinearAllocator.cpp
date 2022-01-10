@@ -10,6 +10,8 @@ LinearAllocator::LinearAllocator(std::size_t Size){
     size = Size;
 };
 
+
+
 LinearAllocator::~LinearAllocator(){
 
 };
@@ -18,7 +20,8 @@ void* LinearAllocator::Allocate(std::size_t Size){
     int previous_size = cur_size;
     cur_size += Size ;
     if (cur_size > size) throw ("bad Allocation");
-    return ResourceBlock + previous_size;
+    char* to_return = (char*) ResourceBlock;
+    return to_return + previous_size;
 };
 
 void LinearAllocator::Free(void *ptr) {
@@ -27,4 +30,5 @@ void LinearAllocator::Free(void *ptr) {
 
 void LinearAllocator::Reset(){
     free(ResourceBlock);
+    cur_size = 0;
 }

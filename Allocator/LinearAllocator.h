@@ -7,7 +7,6 @@
 class LinearAllocator : public Allocator{
     private:
         void* ResourceBlock;
-        void* CurrentPtr;
         std::size_t size;
         std::size_t cur_size = 0;
     public:

@@ -2,6 +2,7 @@
 #include "Allocator/LinearAllocator.h"
 #include <chrono>
 #include <iostream>
+#include "vector.h"
 using namespace std::chrono;
 using std::chrono::high_resolution_clock;
 using std::chrono::duration_cast;
@@ -12,7 +13,7 @@ using std::chrono::nanoseconds;
 void Classic(){
     auto start = high_resolution_clock::now();
     ClassicAllocator AL;
-    for (int i = 0 ; i < 100000 ; i ++){
+    for (int i = 0 ; i < 1000000 ; i ++){
         static_cast<int*>(AL.Allocate(sizeof(int)));
     }
     auto end  = high_resolution_clock::now();
@@ -23,8 +24,8 @@ void Classic(){
 void Linear(){
     auto clock = high_resolution_clock();
     auto start = clock.now();
-    LinearAllocator LAL(100001*4);
-    for (int i = 0 ; i < 100000 ; i ++){
+    LinearAllocator LAL(1000001*4);
+    for (int i = 0 ; i < 1000000 ; i ++){
         static_cast<int*>(LAL.Allocate(sizeof(int)));
     }
     LAL.Reset();
