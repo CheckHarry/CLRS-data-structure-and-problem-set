@@ -13,6 +13,7 @@ class vector{
         std::size_t cur_element_capacity;
         LinearAllocator Memory_allocator;
     public:
+        vector();
         T& operator[](std::size_t No){
             if (No >= cur_element_capacity) throw("Out bound!");
             return *(raw_vector + No);
