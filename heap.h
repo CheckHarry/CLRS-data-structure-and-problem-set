@@ -15,7 +15,7 @@ private:
     int vec_size;
 public:
     heap(std::vector<T> heap_vec_to_insert);
-    void print_heap();
+    int size();
     void heapify(int index);
     void build_heap();
     const T& get_max();
@@ -23,13 +23,11 @@ public:
     std::vector<T> get_sorted_vec();
 };
 
-
 template<typename T>
-void heap<T>::print_heap(){
-    for (int i = 0 ; i < vec_size ; i ++){
-        std::cout << heap_vec[i] << '\n';
-    }
+int heap<T>::size(){
+    return vec_size;
 }
+
 
 
 template<typename T>
