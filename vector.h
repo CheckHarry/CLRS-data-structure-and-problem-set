@@ -3,6 +3,7 @@
 
 #include "Allocator/LinearAllocator.h"
 #include <stdlib.h>
+#include <string.h>
 #include <iostream>
 
 template<typename T>
@@ -19,6 +20,7 @@ class vector{
         ~vector();
         T& operator[](std::size_t No);
         void push_back(T obj);
+        void pop_back();
         int size() {return cur_element_capacity;}
     
 };
@@ -79,6 +81,11 @@ void vector<T>::push_back(T obj){
     raw_vector[cur_element_capacity - 1] = obj;
 }
 
+template<typename T>
+void vector<T>::pop_back(){
+    raw_vector[cur_element_capacity - 1] -> ~T();
+    cur_element_capacity --;
+}
 
 
 #endif

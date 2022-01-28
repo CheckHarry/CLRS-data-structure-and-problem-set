@@ -85,5 +85,6 @@
         "numbers": "cpp",
         "semaphore": "cpp",
         "cinttypes": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }

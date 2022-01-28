@@ -47,6 +47,9 @@ target_link_libraries(vector_test gtest gtest_main)
 add_executable(Allocator_test Allocator_test.cpp)
 target_link_libraries(Allocator_test ClassicAllocator)
 target_link_libraries(Allocator_test LinearAllocator)
+
+add_executable(stack_test stack_test.cpp)
+target_link_libraries(stack_test gtest gtest_main)
 #target_link_libraries(Allocator_test gtest gtest_main)
 #target_link_libraries(heap_test heap_lib)
 
