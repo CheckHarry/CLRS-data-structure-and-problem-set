@@ -12,7 +12,9 @@ public:
     stack();
     void push(T obj);
     void pop();
+    T& top();
     int size();
+    bool empty();
 };
 
 template<typename T>
@@ -25,12 +27,26 @@ void stack<T>::push(T obj){
 
 template<typename T>
 void stack<T>::pop(){
-    container.pop_back();
+    if(size() > 0) container.pop_back();
+    else throw "stack is empty!";
+}
+
+template<typename T>
+T& stack<T>::top(){
+    return container[size() - 1];
 }
 
 
+template<typename T>
+int stack<T>::size(){
+    return container.size();
+}
 
 
+template<typename T>
+bool stack<T>::empty(){
+    return size() == 0;
+}
 
 
 #endif

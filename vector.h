@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <iostream>
-
+#include <type_traits>
 template<typename T>
 class vector{
     private:
@@ -83,7 +83,7 @@ void vector<T>::push_back(T obj){
 
 template<typename T>
 void vector<T>::pop_back(){
-    raw_vector[cur_element_capacity - 1] -> ~T();
+    if constexpr (std::is_fundamental<T>::value != true) raw_vector[cur_element_capacity - 1].~T();
     cur_element_capacity --;
 }
 
